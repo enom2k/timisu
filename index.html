@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TI X MISU</title>
   <link rel="stylesheet" href="./main.css">
-  <script defer src="./main.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"> 
@@ -40,7 +39,32 @@
     </div>
   </section>
 
+  <script>
+    $(document).ready(function(){
+    var owl = $('.owl-carousel');
+    
+  owl.owlCarousel({
+    loop: true,
+    items: 3.6, 
+    autoplay: true,
+    slideTransition: 'linear',
+    autoplaySpeed: 5000,
+    smartSpeed: 5000,
+    center: true,
+    margin: 15
+      
+  });    
 
+  jQuery('.owl-carousel').trigger('play.owl.autoplay',[2000]);
+
+function setSpeed(){
+    jQuery('.owl-carousel').trigger('play.owl.autoplay',[5000]);
+}
+
+setTimeout(setSpeed, 1000);
+    
+});
+  </script>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
  
