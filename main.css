@@ -1,0 +1,48 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  margin: 0 auto;
+  width: 100%;
+  }
+img {
+  width: 100%;
+  display: block;
+}
+.ti-main {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.ti-main1 {
+  position: relative;
+  width: 100%;
+}
+.ti-main3 {
+  position: relative;
+  width: 100%;
+}
+.owl-carousel {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto; 
+}
+.owl-stage-outer {
+    position: relative;
+    margin: 0 auto;
+}
+.owl-dots{
+    display: none;
+}
+.ti-main-slide {
+  position: relative;
+  width: 100%;
+}
+.main-slide {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
